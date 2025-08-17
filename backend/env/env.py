@@ -102,7 +102,7 @@ STOCK_TITLE_FILED_NAME = 'stock_title'
 # NUMBER OF STOCKS TO RUN 
 NUMBER_OF_STOCKS_TO_RUN = 490
 # FININ KEY 
-FIN_KEY = "d0nm841r01qn5ghkk9g0d0nm841r01qn5ghkk9gg"
+FIN_KEY = "****************************"
 # lstm sequince lenght 
 lstm_sequence_length = 60  # e.g., use past 60 days to predict next 5
 # lstm days predict
