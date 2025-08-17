@@ -1,0 +1,9 @@
+<div class="scroll-wrapper">
+    <!-- <div class="card" *ngFor="let card of cards">
+      {{ card }}
+    </div> -->
+
+  @for (card of trackedStocks; ;track card){
+    <app-stock-data-card (click)="chooseCard(card)" [stockTitle]="card.stock_title" [buyFlagDate]="card.first_buy_signal_data" appHighlight [buyFlagValue]="card.buy_signal"></app-stock-data-card>
+  } 
+</div>

@@ -1,0 +1,10 @@
+start bash in conatiner: kubectl exec -it -n stockapp flask-app-6944b67c94-lfc58 -- /bin/bash
+conatiners logs : kubectl logs flask-app-6944b67c94-lfc58 -n stockapp -f
+
+port forward : kubectl port-forward pod/flask-service 5000:5000 -n stockapp
+
+ingress : http://stockapp.local/
+
+http://stockapp.local/api/
+http://stockapp.local/
+

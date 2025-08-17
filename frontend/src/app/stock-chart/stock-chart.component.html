@@ -1,0 +1,19 @@
+
+<div *ngIf="chartData.length>0">
+  <h3 class="chart-title">{{charTitle}}</h3>
+  <ngx-charts-line-chart
+        [view]="[700, 400]"
+        [scheme]="colorScheme"
+        [results]="chartLines"
+        [gradient]="true"
+        [xAxis]="true"
+        [yAxis]="true"
+        [legend]="true"
+        [showXAxisLabel]="true"
+        [showYAxisLabel]="true"
+        [autoScale]="true"
+        [timeline]="true"      
+        xAxisLabel="Trade dates"
+        yAxisLabel="Closing Price">
+      </ngx-charts-line-chart>
+</div>

@@ -1,0 +1,9 @@
+
+  
+
+  <div class="card" *ngIf="stockMetric">
+    <h2 class="title">Model Metrics for <b>{{ stockMetric.stock_title }}</b></h2>
+    <p class="date">Training Date: {{  stockMetric.training_date | date: 'yyyy-MM-dd' }}</p>
+    <p class="mse">Training Error (MSE): {{ stockMetric.mse | number:'1.2-2' }}</p>
+  </div>
+  

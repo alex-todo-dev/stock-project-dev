@@ -1,0 +1,16 @@
+wheel>=0.41
+flask 
+pymongo 
+flask_cors 
+datetime
+pandas 
+yfinance 
+requests
+tensorflow
+joblib
+scikit-learn
+holidays
+typing
+matplotlib
+finnhub-python
+textblob

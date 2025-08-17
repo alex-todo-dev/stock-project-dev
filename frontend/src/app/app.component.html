@@ -1,0 +1,28 @@
+<mat-toolbar>
+  <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <span>{{title}} - This is a personal portfolio project. <b>NOT FINANCIAL ADVICE</b></span>
+  <span class="example-spacer"></span>
+  <!-- <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+    <mat-icon>favorite</mat-icon>
+  </button>
+  <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+    <mat-icon>share</mat-icon>
+  </button> -->
+
+  <button mat-button (click)="openDialog()"><mat-icon>warning</mat-icon></button>
+</mat-toolbar>
+<div class="sp500">
+  <!-- <h4>SP500 Stock with buy flags</h4> -->
+  <app-card-spinner></app-card-spinner>
+</div> 
+
+<hr />
+
+<div style="display: flex; flex-direction: row; gap: 1rem;">
+  <app-stock-chart></app-stock-chart>
+  <app-stock-details-metrics></app-stock-details-metrics>
+  <app-predicted-metrics></app-predicted-metrics>
+</div>
+<!-- <router-outlet></router-outlet> -->

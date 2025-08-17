@@ -1,0 +1,30 @@
+<div class="stock-card">
+    <div class="stock-card-header">
+      <h2>{{ stockTitle }}</h2>
+    </div>
+
+    <p><strong>Sentiment:</strong>
+      <span class="sentiment-indicator"
+            [ngStyle]="{ 'background-color': getSentimentColor(sentiment?.polarity) }">
+      </span>
+      <span class="sentiment-label">
+        {{ sentiment?.sentiment }} ({{ sentiment?.polarity | number: '1.2-2' }})
+      </span>
+    </p>
+
+
+    <div class="stock-card-body">
+      <p><strong>Buy Flag Date:</strong> {{ buyFlagDate | date: 'yyyy-MM-dd' }}  </p>
+      <p><strong>Training error:</strong> {{ stockMetric?.mse | number:'1.2-2' }}</p>
+      <p matTooltip="0	No signal ; 
+      1	RSI < 40 (regardless of SMA); 
+      2	RSI < 40 and Close > SMA; 
+      3	RSI < 30 and Close > SMA (strongest buy signal)" matTooltipClass="multiline-tooltip" [matTooltipPosition]="position.value!"><strong>Buy Flag:</strong> {{ buyFlagValue }} </p>
+      <p><strong>Trend:</strong> 
+        <span [ngStyle]="{ color: stockPredictMetric?.trend?.status === 'up' ? 'green' : 'red' }">
+          {{ stockPredictMetric?.trend?.status | capitalize}}
+        </span>
+      </p>
+    </div>
+  </div>
+   

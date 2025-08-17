@@ -1,0 +1,57 @@
+.stock-card {
+    width: 300px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 15px;
+  }
+  
+  .stock-card-header {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #343a40;
+    text-align: center;
+  }
+  
+  .stock-card-body {
+    margin-top: 10px;
+  }
+  
+  .stock-card p {
+    font-size: 1em;
+    color: #495057;
+    margin: 8px 0;
+  }
+
+  .scroll-container {
+    display: flex;
+    overflow-x: auto;
+    padding: 1rem;
+    gap: 1rem;
+  }
+  
+  .stock-card.selected {
+    border: 2px solid #007bff;
+    background-color: #e7f1ff;
+    box-shadow: 0 6px 12px rgba(0, 123, 255, 0.2);
+  }
+
+  .multiline-tooltip {
+    white-space: pre-line;
+  }
+  
+  .sentiment-indicator {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    margin-right: 8px;
+    vertical-align: middle;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
+  }
+  
+  .sentiment-label {
+    vertical-align: middle;
+  }
+  

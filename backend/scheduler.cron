@@ -1,0 +1,2 @@
+# Run the command every 6 hours
+0 */6 * * * root /usr/local/bin/python /app/start_program_flow.py >> /var/log/cron.log 2>&1

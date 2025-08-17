@@ -1,0 +1,25 @@
+.scroll-wrapper {
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto;
+  white-space: nowrap;
+  padding: 16px;
+  gap: 16px;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+
+.scroll-wrapper > * {
+  scroll-snap-align: start;
+}
+
+/* Optional scrollbar style */
+.scroll-wrapper::-webkit-scrollbar {
+  height: 8px;
+}
+
+.scroll-wrapper::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}

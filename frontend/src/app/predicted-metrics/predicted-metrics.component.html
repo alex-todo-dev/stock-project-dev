@@ -1,0 +1,24 @@
+<div *ngIf="stockPredictMetric" class="card-row">
+  <div class="card">
+    <h3>Prediction Error</h3>
+    <p>MAE: {{ stockPredictMetric.prediction_error.MAE | number:'1.2-2'}}</p>
+    <p>MSE: {{ stockPredictMetric.prediction_error.MSE | number:'1.2-2'}}</p>
+    <p>RMSE: {{ stockPredictMetric.prediction_error.RMSE | number:'1.2-2'}}</p>
+  </div>
+
+  <div class="card">
+    <h3>Trend</h3>
+    <p>Status: {{ stockPredictMetric.trend.status }}</p>
+    <p>Delta: {{ stockPredictMetric.trend.delta | number:'1.2-2'}}</p>
+    <p>Percentage Delta: {{ stockPredictMetric.trend.precentage_delta | number:'1.2-2'}}%</p>
+  </div>
+
+  <div class="card">
+    <h2>Sell Signal</h2>
+    <p>Date: {{ stockPredictMetric.sell_signal.date }}</p>
+    <p>Signal: {{ stockPredictMetric.sell_signal.sell_signal ? 'Yes' : 'No' }}</p>
+    <p>Close Price: {{ stockPredictMetric.sell_signal.close_price }}</p>
+    <p>RSI: {{ stockPredictMetric.sell_signal.rsi }}</p>
+    <p>MA20: {{ stockPredictMetric.sell_signal.ma20 }}</p>
+  </div>
+</div>
